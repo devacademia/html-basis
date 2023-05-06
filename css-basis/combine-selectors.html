@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utiliser les combinateurs</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 90%;
+      margin: 20px auto;
+    }
+
+    /**
+    * Combinateur descendant
+    */
+    header h1 {
+      color: green;
+      border: double 10px green;
+      border-radius: 15px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /**
+    * Combinateur enfant
+    */
+    section > h2 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-decoration: underline;
+    }
+
+    section .h2-p {
+      font-style: normal;
+    }
+    
+    /**
+    * Combinateur frères adjacents
+    */
+    h2 + p {
+      color: blue;
+      font-style: normal;
+    }
+
+    /**
+    * Combinateur général de frères
+    */
+    h2 ~ p {
+      font-style: italic;
+      word-spacing: 2px;
+    }
+    
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Presentation de ma semaine</h1>
+    </header>
+    <section class="grocery">
+      <h2>Ma liste de course</h2>
+      <p class="h2-p">Je vous presente ma liste de course du weekend :</p>
+      <ul class="grocery-list">
+        <li class="grocery-list-item">Papier toilette</li>
+        <li class="grocery-list-item">Insecticide</li>
+        <li class="grocery-list-item">Savon de menage</li>
+        <li class="grocery-list-item">Choux verts</li>
+      </ul>
+      
+      <p>Je n'ai pas de h2 comme frere adjacent</p>
+
+    </section>
+
+    <section class="activities">
+      <h2>Mes activités de la semaine</h2>
+      <p class="h2-p">Je vous presente la liste de mes activités de la semaine</p>
+      <ul>
+        <li>J'ai rendu visite a une tante</li>
+        <li>J'ai developé deux fonctionnalités dans <a href="https://github.com/devacademia/learn-git-github">mon projet</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Copyright (c) Silevester 2023</p>
+    </footer>
+  </main>
+</body>
+</html>
