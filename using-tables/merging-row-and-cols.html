@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fusionner les lignes et les colonnes</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th{
+      border: solid 1px gray;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Fusionner les lignes et les colonnes d'un tableau</h1>
+  <table>
+    <tr>
+      <th colspan="2">Animaux</th>
+    </tr>
+    <tr>
+      <th colspan="2">Hippopotame</th>
+    </tr>
+    <tr>
+      <th>Cheval</th>
+      <td rowspan="2">Jument</td>
+    </tr>
+    <tr>
+      <th>Etalon</th>
+    </tr>
+    <tr>
+      <th colspan="2">Crocodile</th>
+    </tr>
+    <tr>
+      <th>Poulet</th>
+      <td rowspan="2">Poule</td>
+    </tr>
+    <tr>
+      <th>Coq</th>
+    </tr>
+  </table>
+</body>
+</html>
