@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creer un tableau</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 550px;
+      margin: auto;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td{
+      border: solid 1px gray;
+      padding: 5px;
+    }
+
+    .table-header {
+      background-color: darkgrey;
+      font-weight: bolder;
+    }
+
+    .left-header {
+      background-color: lightgrey;
+      font-weight: bolder;
+    }
+  </style>
+</head>
+<body>
+  <h1>Creation du premier tableau</h1>
+  <table>
+    <tr class="table-header">
+      <td>Personne</td>
+      <td>Age</td>
+    </tr>
+    <tr>
+      <td class="left-header">Chris</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td class="left-header">Denis</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td class="left-header">Sarah</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td class="left-header">Karen</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td class="left-header">Sam</td>
+      <td>25</td>
+    </tr>
+  </table>
+</body>
+</html>
