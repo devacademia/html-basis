@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Structurer un tableau</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+    }
+
+    td, th{
+      border: solid 1px gray;
+      padding: 5px;
+    }
+
+    thead td, thead th, tfoot td, tfoot th{
+      border-width: 2px;
+      font-weight: bolder;
+    }
+
+    thead {
+      background-color: rgba(150, 255, 200, .5);
+    }
+
+    tfoot {
+      background-color: rgba(150, 255, 200, 1);
+    }
+
+    tbody th {
+      background-color: rgba(150, 255, 200, .5);
+    }
+
+    tbody td {
+      background-color: rgba(240, 240, 240, .7);
+    }
+    table caption {
+      color: green;
+      font-weight: bolder;
+      font-size: 18px;
+      margin: 10px 0;
+      word-spacing: 3px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Créer un tableau structuré: bulletin de note</h1>
+  <table>
+    <caption>Bulletin de note de Assouta Kenian</caption>
+    <thead>
+      <tr>
+        <th rowspan="2">Matières</th>
+        <th colspan="2">Trimestre 1</th>
+        <th colspan="2">Trimestre 2</th>
+        <th colspan="2">Trimestre 3</th>
+      </tr>
+      <tr>
+        <th>Séquence 1</th>
+        <th>Séquence 2</th>
+        <th>Séquence 3</th>
+        <th>Séquence 4</th>
+        <th>Séquence 5</th>
+        <th>Séquence 6</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>ECM</th>
+        <td>08</td>
+        <td>12</td>
+        <td>14</td>
+        <td>07</td>
+        <td>18</td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <th>Mathématiques</th>
+        <td>10</td>
+        <td>16</td>
+        <td>14</td>
+        <td>17</td>
+        <td>09</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <th>TIC</th>
+        <td>18</td>
+        <td>16</td>
+        <td>19</td>
+        <td>17</td>
+        <td>18</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <th>Sport</th>
+        <td>12</td>
+        <td>15</td>
+        <td>14</td>
+        <td>13</td>
+        <td>14</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <th>Anglais</th>
+        <td>06</td>
+        <td>09</td>
+        <td>13</td>
+        <td>07</td>
+        <td>12</td>
+        <td>09</td>
+      </tr>
+      <tr>
+        <th>Expression orale</th>
+        <td>16</td>
+        <td>17</td>
+        <td>13</td>
+        <td>17</td>
+        <td>18</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <th>Expression écrite</th>
+        <td>05</td>
+        <td>12</td>
+        <td>16</td>
+        <td>05</td>
+        <td>15</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <th>Sciences</th>
+        <td>14</td>
+        <td>17</td>
+        <td>18</td>
+        <td>15</td>
+        <td>13</td>
+        <td>19</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Total</th>
+        <td>79</td>
+        <td>114</td>
+        <td>121</td>
+        <td>98</td>
+        <td>117</td>
+        <td>112</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Moyenne / 20</th>
+        <td>9.87</td>
+        <td>14.25</td>
+        <td>15.12</td>
+        <td>12.25</td>
+        <td>14.62</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td colspan="2">12.06</td>
+        <td colspan="2">13.69</td>
+        <td colspan="2">14.31</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
