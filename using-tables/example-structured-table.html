@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemple de tableau structuré</title>
+  <style>
+    body {
+      width: 60%;
+      margin: auto;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    table {
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      border-collapse: collapse;
+      border: solid 2px rgb(200, 200, 200);
+    }
+
+    td, th {
+      border: solid 1px rgb(200, 200, 200);
+      padding: 8px;
+    }
+
+    tbody td {
+      font-size: 14px;
+      font-style: italic;
+    }
+
+    thead, tfoot {
+      font-weight: bold;
+      background-color: rgba(220, 220, 220, .5);
+    }
+  </style>
+</head>
+<body>
+  <h1>Example d'un tableau structuré</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Achats</th>
+        <th>Où ?</th>
+        <th>Date</th>
+        <th>Avis</th>
+        <th>Coût (XAF)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Coupe de cheveux</td>
+        <td>Coiffeur</td>
+        <td>21/05</td>
+        <td>Bonne idée</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>Deux oeuf-spaghettis</td>
+        <td>Restaurant</td>
+        <td>21/05</td>
+        <td>Regrets</td>
+        <td>400</td>
+      </tr>
+      <tr>
+        <td>Souliers</td>
+        <td>Chaussures</td>
+        <td>18/05</td>
+        <td>Gros regrets</td>
+        <td>12 500</td>
+      </tr>
+      <tr>
+        <td>Dentifrice</td>
+        <td>Supermarché</td>
+        <td>18/05</td>
+        <td>Bien</td>
+        <td>1 200</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">Somme</td>
+        <td>14 600</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
