@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire structuré</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 80%;
+      margin: auto;
+    }
+    div {
+      margin-top: 10px;
+    }
+    @media screen and (max-width: 900px) {
+      body {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Veuillez remplir vos informations de facturation</h1>
+
+  <form action="" name="billingForm" id="billingForm">
+    <fieldset id="user-info">
+      <legend>Informations personnelles</legend>
+
+      <div>
+        <label for="uname">Nom</label>
+        <input type="text" name="uname" id="uname">
+      </div>
+
+      <div>
+        <label for="usurname">Prénom</label>
+        <input type="text" name="usurname" id="uname">
+      </div>
+
+      <div>
+        <label for="uage">Age</label>
+        <input type="text" name="uage" id="uage">
+      </div>
+    </fieldset>
+
+    <fieldset id="user-address">
+      <legend>Adresse de facturation</legend>
+
+      <div>
+        <label for="ucountry">Pays</label>
+        <input type="text" name="ucountry" id="ucountry">
+      </div>
+      <div>
+        <label for="ucity">Ville</label>
+        <input type="text" name="ucity" id="ucity">
+      </div>
+      <div>
+        <label for="utel">Téléphone</label>
+        <input type="tel" name="utel" id="utel">
+      </div>
+    </fieldset>
+    
+    <fieldset id="payment-info">
+      <legend>Informations de paiement</legend>
+
+      <div>
+        <label for="payment-method">Méthode de paiement</label>
+        <input type="radio" name="payment-method" id="payment-method" value="paypal"> Paypal
+        <input type="radio" name="payment-method" id="payment-method" value="Stripe"> Stripe
+        <input type="radio" name="payment-method" id="payment-method" value="om"> Orange money
+        <input type="radio" name="payment-method" id="payment-method" value="momo"> Mobile money
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>

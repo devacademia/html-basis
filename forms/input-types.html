@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les types de champs de formulaires</title>
+  <style>
+    .animes {
+      list-style-type: none;
+      margin-left: -30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Les types de champs de formulaires</h1>
+
+  <form method="post" action="" enctype="multipart/form-data">
+    <h2>Les cases à cocher</h2>
+    <div>
+      <label for="best-animes">Choisir tes deux animés préférés</label>
+      <ul class="animes">
+        <li><input type="checkbox" name="best-animes" value="Dragon Ball Z"> Dragon Ball Z</li>
+        <li><input type="checkbox" name="best-animes" value="Afro samurai"> Afro Samurai</li>
+        <li><input type="checkbox" name="best-animes" value="Saint Seya : les chevaliers du zodiaque"> Saint Seya : les chevaliers du zodiaque</li>
+        <li><input type="checkbox" name="best-animes" value="Saint Seya : the lost canvas"> Saint Seya : the lost canvas</li>
+        <li><input type="checkbox" name="best-animes" value="Naruto Shipudem"> Naruto Shipudem</li>
+      </ul>
+    </div>
+
+    <h2>Les champs cachés</h2>
+
+    <label>Inspecte moi pour voir le champ caché</label>
+    <input type="hidden" name="hide" value="Valeur cachée">
+
+    <h2>Les selecteurs de fichiers</h2>
+
+    <label>Télécharger le CV</label>
+    <input type="file" multiple name="cv">
+
+    <h2>Les champs de saisi sur une ligne</h2>
+
+    <div>
+      <label>Votre adresse</label><br>
+      <input type="text" name="address" value="Dschang" readonly>
+    </div>
+
+    <h2>Les champs de saisi sur plusieurs lignes</h2>
+
+    <div>
+      <label>Racontes-moi une histoire</label><br>
+      <textarea spellcheck="false" placeholder="Racontes-moi une histoire cool ..." name="user-story" id="ustory" cols="100" rows="2"></textarea>
+    </div>
+
+    <h2>Les champs de saisi de mot de passe</h2>
+
+    <div>
+      <label>Entres ton password</label><br>
+      <input minlength="8" maxlength="20" type="password" name="pwd">
+    </div>
+
+    <h2>Les champs numériques</h2>
+
+    <div>
+      <label>Entres ton âge</label><br>
+      <input type="number" min="10" max="30" name="age" step="0.01">
+    </div>
+
+    <h2>Les champs dates</h2>
+
+    <div>
+      <label>Entres ta date de naissance</label><br>
+      <input type="date" name="bdate">
+    </div>
+    <br>
+    <div>
+      <label>Entres ton heure de naissance</label><br>
+      <input type="time" name="btime">
+    </div>
+
+    <h2>Les listes déroulantes</h2>
+
+    <div>
+      <label>Choisir ton fruit préféré</label><br>
+      <select required="required" name="fruit" id="pfruit">
+        <option value="peach">Pêche</option>
+        <option value="apple">Pomme</option>
+        <option value="strawberry">Fraise</option>
+        <option value="banana">Banane</option>
+        <option value="orange">Orange</option>
+      </select>
+    </div>
+
+    <h2>Bouton de soumission et de reinitialisation du formulaire</h2>
+    <div class="controls">
+      <input type="submit" name="billing" value="Tout envoyer">
+      <input type="reset" name="reset" id="resetBtn" value="Réinitialisation">
+    </div>
+  </form>
+</body>
+</html>
