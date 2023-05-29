@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les pseudo-classes</title>
+  <style>
+    p:not(.skip) {
+      color: green;
+    }
+
+    table {
+      width: 50%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: solid 1px;
+      padding: 10px;
+    }
+
+    table tr:nth-child(odd) {
+      background-color: rgba(200, 200, 200, .6);
+    }
+
+    .monP:hover {
+      color: blueviolet;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 1.1rem;
+    }
+
+    .player-list li:first-child {
+      font-weight: bold;
+      margin: 10px 0px;
+    } 
+
+    .player-list li:first-child::after {
+      content: " +";
+      color: green;
+    }
+
+    .player-list li:first-child::before {
+      content: "^ ";
+      color: green;
+    }
+
+    .player-list li:last-child {
+      font-weight: thin;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Utiliser les pseudo-classes</h1>
+  <h2>Exemple avec <em><b>:not</b></em></h2>
+  <p class="skip">Paragraphe pour tester la pseudo-classe <em><b>:not</b></em></p>
+  <p>Un autre paragraphe</p>
+
+  <h2>Exemple avec <em><b>:nth-child</b></em></h2>
+  <table>
+    <tr>
+      <th>Nom</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Sonkeng</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Adama</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>Agorath</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Silenou</td>
+      <td>09</td>
+    </tr>
+    <tr>
+      <td>Santere</td>
+      <td>13</td>
+    </tr>
+  </table>
+
+  <h2>Exemple avec <em><b>:hover</b></em></h2>
+  <p class="monP">Je change de couleur et de fonte quand on me survole</p>
+
+  <h2>Exemple avec <em><b>:first-child</b></em> et <em><b>:last-child</b></em></h2>
+  <p>Liste des meilleurs joueurs :</p>
+  <ol class="player-list">
+    <li>Cristiano Ronaldo</li>
+    <li>Karim Benzema</li>
+    <li>Sadio Mané</li>
+    <li>Mohammed Salah</li>
+    <li>Vinicius Junior</li>
+  </ol>
+</body>
+</html>
